@@ -1,22 +1,38 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity test is
-Port ( B0,B1,B2,B3 : in STD_LOGIC;
-A,B,C,D,E,F,G : out STD_LOGIC);
-end test;
-
-architecture Behavioral of test is
+entity bcd_7seg is
+port (
+      clk : in std_logic;
+        bcd : in std_logic_vector(3 downto 0);  --BCD input
+        segment7 : out std_logic_vector(6 downto 0)  -- 7 bit decoded output.
+    );
+end bcd_7seg;
+--'a' corresponds to MSB of segment7 and g corresponds to LSB of segment7.
+architecture Behavioral of bcd_7seg is
 
 begin
+process (clk,bcd)
+BEGIN
+if (clk'event and clk='1') then
+case  bcd is
+when "0000"=> segment7 <="0000001";  -- '0'
+when "0001"=> segment7 <="1001111";  -- '1'
+when "0010"=> segment7 <="0010010";  -- '2'
+when "0011"=> segment7 <="0000110";  -- '3'
+when "0100"=> segment7 <="1001100";  -- '4'
+when "0101"=> segment7 <="0100100";  -- '5'
+when "0110"=> segment7 <="0100000";  -- '6'
+when "0111"=> segment7 <="0001111";  -- '7'
+when "1000"=> segment7 <="0000000";  -- '8'
+when "1001"=> segment7 <="0000100";  -- '9'
+ --nothing is displayed when a number more than 9 is given as input.
+when others=> segment7 <="1111111";
+end case;
+end if;
 
-A <= B0 OR B2 OR (B1 AND B3) OR (NOT B1 AND NOT B3);
-B <= (NOT B1) OR (NOT B2 AND NOT B3) OR (B2 AND B3);
-C <= B1 OR NOT B2 OR B3;
-D <= (NOT B1 AND NOT B3) OR (B2 AND NOT B3) OR (B1 AND NOT B2 AND B3) OR (NOT B1 AND B2) OR B0;
-E <= (NOT B1 AND NOT B3) OR (B2 AND NOT B3);
-F <= B0 OR (NOT B2 AND NOT B3) OR (B1 AND NOT B2) OR (B1 AND NOT B3);
-G <= B0 OR (B1 AND NOT B2) OR ( NOT B1 AND B2) OR (B2 AND NOT B3);
+end process;
 
 end Behavioral;

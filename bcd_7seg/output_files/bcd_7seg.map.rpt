@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bcd_7seg
-Fri Mar 26 20:05:24 2021
+Sat Mar 27 16:59:27 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -37,26 +43,26 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Failed - Fri Mar 26 20:05:24 2021           ;
+; Analysis & Synthesis Status       ; Successful - Sat Mar 27 16:59:27 2021       ;
 ; Quartus Prime Version             ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                     ; bcd_7seg                                    ;
 ; Top-level Entity Name             ; bcd_7seg                                    ;
 ; Family                            ; Arria II GX                                 ;
-; Logic utilization                 ; N/A until Partition Merge                   ;
-;     Combinational ALUTs           ; N/A until Partition Merge                   ;
-;     Memory ALUTs                  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers     ; N/A until Partition Merge                   ;
-; Total registers                   ; N/A until Partition Merge                   ;
-; Total pins                        ; N/A until Partition Merge                   ;
-; Total virtual pins                ; N/A until Partition Merge                   ;
-; Total block memory bits           ; N/A until Partition Merge                   ;
-; DSP block 18-bit elements         ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PCS    ; N/A until Partition Merge                   ;
-; Total GXB Receiver Channel PMA    ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PCS ; N/A until Partition Merge                   ;
-; Total GXB Transmitter Channel PMA ; N/A until Partition Merge                   ;
-; Total PLLs                        ; N/A until Partition Merge                   ;
-; Total DLLs                        ; N/A until Partition Merge                   ;
+; Logic utilization                 ; N/A                                         ;
+;     Combinational ALUTs           ; 7                                           ;
+;     Memory ALUTs                  ; 0                                           ;
+;     Dedicated logic registers     ; 7                                           ;
+; Total registers                   ; 7                                           ;
+; Total pins                        ; 12                                          ;
+; Total virtual pins                ; 0                                           ;
+; Total block memory bits           ; 0                                           ;
+; DSP block 18-bit elements         ; 0                                           ;
+; Total GXB Receiver Channel PCS    ; 0                                           ;
+; Total GXB Receiver Channel PMA    ; 0                                           ;
+; Total GXB Transmitter Channel PCS ; 0                                           ;
+; Total GXB Transmitter Channel PMA ; 0                                           ;
+; Total PLLs                        ; 0                                           ;
+; Total DLLs                        ; 0                                           ;
 +-----------------------------------+---------------------------------------------+
 
 
@@ -162,24 +168,139 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; bcd_7seg.vhdl                    ; yes             ; User VHDL File  ; E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/bcd_7seg/bcd_7seg/bcd_7seg.vhdl ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++-----------------------------------------------+--------------+
+; Resource                                      ; Usage        ;
++-----------------------------------------------+--------------+
+; Estimated ALUTs Used                          ; 7            ;
+;     -- Combinational ALUTs                    ; 7            ;
+;     -- Memory ALUTs                           ; 0            ;
+;     -- LUT_REGs                               ; 0            ;
+; Dedicated logic registers                     ; 7            ;
+;                                               ;              ;
+; Estimated ALUTs Unavailable                   ; 0            ;
+;     -- Due to unpartnered combinational logic ; 0            ;
+;     -- Due to Memory ALUTs                    ; 0            ;
+;                                               ;              ;
+; Total combinational functions                 ; 7            ;
+; Combinational ALUT usage by number of inputs  ;              ;
+;     -- 7 input functions                      ; 0            ;
+;     -- 6 input functions                      ; 0            ;
+;     -- 5 input functions                      ; 0            ;
+;     -- 4 input functions                      ; 7            ;
+;     -- <=3 input functions                    ; 0            ;
+;                                               ;              ;
+; Combinational ALUTs by mode                   ;              ;
+;     -- normal mode                            ; 7            ;
+;     -- extended LUT mode                      ; 0            ;
+;     -- arithmetic mode                        ; 0            ;
+;     -- shared arithmetic mode                 ; 0            ;
+;                                               ;              ;
+; Estimated ALUT/register pairs used            ; 7            ;
+;                                               ;              ;
+; Total registers                               ; 7            ;
+;     -- Dedicated logic registers              ; 7            ;
+;     -- I/O registers                          ; 0            ;
+;     -- LUT_REGs                               ; 0            ;
+;                                               ;              ;
+;                                               ;              ;
+; I/O pins                                      ; 12           ;
+;                                               ;              ;
+; DSP block 18-bit elements                     ; 0            ;
+;                                               ;              ;
+; Maximum fan-out node                          ; bcd[0]~input ;
+; Maximum fan-out                               ; 7            ;
+; Total fan-out                                 ; 61           ;
+; Average fan-out                               ; 1.61         ;
++-----------------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+; |bcd_7seg                  ; 7 (7)               ; 7 (7)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 12   ; 0            ; |bcd_7seg           ; bcd_7seg    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 7     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriaii_ff            ; 7                           ;
+;     plain             ; 7                           ;
+; boundary_port         ; 12                          ;
+; stratixiv_lcell_comb  ; 7                           ;
+;     normal            ; 7                           ;
+;         4 data inputs ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.58                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Mar 26 20:05:13 2021
+    Info: Processing started: Sat Mar 27 16:59:12 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcd_7seg -c bcd_7seg
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7seg.vhdl
-    Info (12022): Found design unit 1: test-Behavioral File: E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/bcd_7seg/bcd_7seg.vhdl Line: 10
-    Info (12023): Found entity 1: test File: E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/bcd_7seg/bcd_7seg.vhdl Line: 5
-Error (12007): Top-level design entity "bcd_7seg" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4850 megabytes
-    Error: Processing ended: Fri Mar 26 20:05:24 2021
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:27
+    Info (12022): Found design unit 1: bcd_7seg-Behavioral File: E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/bcd_7seg/bcd_7seg/bcd_7seg.vhdl Line: 14
+    Info (12023): Found entity 1: bcd_7seg File: E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/bcd_7seg/bcd_7seg/bcd_7seg.vhdl Line: 6
+Info (12127): Elaborating entity "bcd_7seg" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4867 megabytes
+    Info: Processing ended: Sat Mar 27 16:59:27 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 
