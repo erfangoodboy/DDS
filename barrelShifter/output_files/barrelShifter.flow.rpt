@@ -1,5 +1,5 @@
 Flow report for barrelShifter
-Sun Mar 28 10:03:12 2021
+Sun Mar 28 10:21:04 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Flow Status                       ; Successful - Sun Mar 28 10:03:11 2021       ;
+; Flow Status                       ; Successful - Sun Mar 28 10:21:04 2021       ;
 ; Quartus Prime Version             ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                     ; barrelShifter                               ;
 ; Top-level Entity Name             ; barrelShifter                               ;
@@ -69,7 +69,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/28/2021 10:02:45 ;
+; Start date & time ; 03/28/2021 10:20:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; barrelShifter       ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 233497581305164.161690956500964        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 233497581305164.161691064819736        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,8 +93,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4872 MB             ; 00:00:30                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4862 MB             ; 00:00:32                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

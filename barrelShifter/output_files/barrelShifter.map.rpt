@@ -1,5 +1,5 @@
 Analysis & Synthesis report for barrelShifter
-Sun Mar 28 10:03:12 2021
+Sun Mar 28 10:21:04 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Sun Mar 28 10:03:11 2021       ;
+; Analysis & Synthesis Status       ; Successful - Sun Mar 28 10:21:04 2021       ;
 ; Quartus Prime Version             ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                     ; barrelShifter                               ;
 ; Top-level Entity Name             ; barrelShifter                               ;
@@ -280,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -290,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 28 10:02:45 2021
+    Info: Processing started: Sun Mar 28 10:20:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off barrelShifter -c barrelShifter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -306,9 +306,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Sun Mar 28 10:03:12 2021
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Sun Mar 28 10:21:04 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:33
 
 
