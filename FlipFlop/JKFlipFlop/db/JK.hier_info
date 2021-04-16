@@ -1,0 +1,13 @@
+|JK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q << Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+NQ << NQ$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
