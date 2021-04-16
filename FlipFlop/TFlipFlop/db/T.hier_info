@@ -1,0 +1,8 @@
+|T
+T => temp.IN1
+Reset => temp.OUTPUTSELECT
+CLK => temp.CLK
+CLK_enable => temp.OUTPUTSELECT
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
