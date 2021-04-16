@@ -1,0 +1,21 @@
+|Up_Down_Counter
+CLK => COUNT[0]~reg0.CLK
+CLK => COUNT[1]~reg0.CLK
+CLK => COUNT[2]~reg0.CLK
+CLK => COUNT[3]~reg0.CLK
+RESET => COUNT[0]~reg0.ALOAD
+RESET => COUNT[1]~reg0.ALOAD
+RESET => COUNT[2]~reg0.ALOAD
+RESET => COUNT[3]~reg0.ALOAD
+DIR => process_0.IN1
+DIR => process_0.IN1
+DIR => COUNT[3]~reg0.ADATA
+DIR => COUNT[2]~reg0.ADATA
+DIR => COUNT[1]~reg0.ADATA
+DIR => COUNT[0]~reg0.ADATA
+COUNT[0] <> COUNT[0]~reg0
+COUNT[1] <> COUNT[1]~reg0
+COUNT[2] <> COUNT[2]~reg0
+COUNT[3] <> COUNT[3]~reg0
+
+
