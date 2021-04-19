@@ -1,0 +1,29 @@
+|Fifo_control
+clk => r_ptr_reg[0].CLK
+clk => r_ptr_reg[1].CLK
+clk => r_ptr_reg[2].CLK
+clk => r_ptr_reg[3].CLK
+clk => w_ptr_reg[0].CLK
+clk => w_ptr_reg[1].CLK
+clk => w_ptr_reg[2].CLK
+clk => w_ptr_reg[3].CLK
+reset => r_ptr_reg[0].ACLR
+reset => r_ptr_reg[1].ACLR
+reset => r_ptr_reg[2].ACLR
+reset => r_ptr_reg[3].ACLR
+reset => w_ptr_reg[0].ACLR
+reset => w_ptr_reg[1].ACLR
+reset => w_ptr_reg[2].ACLR
+reset => w_ptr_reg[3].ACLR
+wr => w_ptr_next.IN1
+rd => r_ptr_next.IN1
+full << full_flag.DB_MAX_OUTPUT_PORT_TYPE
+empty << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+w_address[0] << w_ptr_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+w_address[1] << w_ptr_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+w_address[2] << w_ptr_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+r_address[0] << r_ptr_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+r_address[1] << r_ptr_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+r_address[2] << r_ptr_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
