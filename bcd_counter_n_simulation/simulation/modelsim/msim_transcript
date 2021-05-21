@@ -1,0 +1,71 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do bcd_counter_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {bcd_counter.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:06 on May 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." bcd_counter.vo 
+# -- Compiling module bcd_counter
+# 
+# Top level modules:
+# 	bcd_counter
+# End time: 18:11:06 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:07 on May 21,2021
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity test_bench
+# -- Compiling architecture TBarch of test_bench
+# End time: 18:11:07 on May 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L gate_work -L work -voptargs="+acc"  test_bench
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L gate_work -L work -voptargs=""+acc"" test_bench 
+# Start time: 18:11:08 on May 21,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_bench(tbarch)
+# Loading work.bcd_counter
+# Loading arriaii_ver.arriaii_io_obuf
+# Loading arriaii_ver.arriaii_io_ibuf
+# Loading arriaii_ver.arriaii_clkena
+# Loading arriaii_ver.arriaii_ena_reg
+# Loading arriaii_ver.arriaii_and2
+# Loading arriaii_ver.arriaii_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from bcd_counter_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from bcd_counter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /test_bench File: C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sepehrrezaei  Hostname: SEPEHRREZAED446  ProcessID: 7412
+#           Attempting to use alternate WLF file "./wlftnc86im".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnc86im
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# End time: 18:14:54 on May 21,2021, Elapsed time: 0:03:46
+# Errors: 0, Warnings: 2

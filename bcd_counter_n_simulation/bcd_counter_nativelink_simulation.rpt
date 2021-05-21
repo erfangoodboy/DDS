@@ -1,0 +1,93 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  arriaiigx
+Quartus root          :  c:/intelfpga_lite/16.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/16.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  bcd_counter.vo
+Sim SDF file          :  bcd_counter__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/16.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File bcd_counter_run_msim_gate_verilog.do already exists - backing up current file as bcd_counter_run_msim_gate_verilog.do.bak8
+Probing transcript
+ModelSim-Altera Info: # Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # do bcd_counter_run_msim_gate_verilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {bcd_counter.vo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 18:11:06 on May 21,2021
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." bcd_counter.vo 
+ModelSim-Altera Info: # -- Compiling module bcd_counter
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	bcd_counter
+ModelSim-Altera Info: # End time: 18:11:06 on May 21,2021, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 18:11:07 on May 21,2021
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Compiling entity test_bench
+ModelSim-Altera Info: # -- Compiling architecture TBarch of test_bench
+ModelSim-Altera Info: # End time: 18:11:07 on May 21,2021, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L gate_work -L work -voptargs="+acc"  test_bench
+ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L arriaii_hssi_ver -L arriaii_pcie_hip_ver -L arriaii_ver -L gate_work -L work -voptargs=""+acc"" test_bench 
+ModelSim-Altera Info: # Start time: 18:11:08 on May 21,2021
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading work.test_bench(tbarch)
+ModelSim-Altera Info: # Loading work.bcd_counter
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_io_obuf
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_io_ibuf
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_clkena
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_ena_reg
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_and2
+ModelSim-Altera Info: # Loading arriaii_ver.arriaii_lcell_comb
+ModelSim-Altera Info: # Loading altera_ver.dffeas
+ModelSim-Altera Info: # SDF 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from bcd_counter_v.sdo
+ModelSim-Altera Info: # Loading altera_ver.PRIM_GDFF_LOW
+ModelSim-Altera Info: # Loading timing data from bcd_counter_v.sdo
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /test_bench File: C:/intelFPGA_lite/16.1/projects/bcd_counter/test_bench.vhd
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+ModelSim-Altera Info: #           File in use by: sepehrrezaei  Hostname: SEPEHRREZAED446  ProcessID: 7412
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlftnc86im".
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+ModelSim-Altera Info: #           Using alternate file: ./wlftnc86im
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run 500 ns
+ModelSim-Altera Info: # End time: 18:14:54 on May 21,2021, Elapsed time: 0:03:46
+ModelSim-Altera Info: # Errors: 0, Warnings: 2
+Info: NativeLink simulation flow was successful

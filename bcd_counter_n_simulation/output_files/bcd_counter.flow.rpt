@@ -1,0 +1,141 @@
+Flow report for bcd_counter
+Fri May 21 18:10:57 2021
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++-----------------------------------+---------------------------------------------+
+; Flow Status                       ; Successful - Fri May 21 18:10:57 2021       ;
+; Quartus Prime Version             ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                     ; bcd_counter                                 ;
+; Top-level Entity Name             ; bcd_counter                                 ;
+; Family                            ; Arria II GX                                 ;
+; Logic utilization                 ; < 1 %                                       ;
+;     Combinational ALUTs           ; 5 / 36,100 ( < 1 % )                        ;
+;     Memory ALUTs                  ; 0 / 18,050 ( 0 % )                          ;
+;     Dedicated logic registers     ; 4 / 36,100 ( < 1 % )                        ;
+; Total registers                   ; 4                                           ;
+; Total pins                        ; 8 / 176 ( 5 % )                             ;
+; Total virtual pins                ; 0                                           ;
+; Total block memory bits           ; 0 / 2,939,904 ( 0 % )                       ;
+; DSP block 18-bit elements         ; 0 / 232 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS    ; 0 / 4 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA    ; 0 / 4 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS ; 0 / 4 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                        ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                        ; 0 / 2 ( 0 % )                               ;
+; Device                            ; EP2AGX45CU17I3                              ;
+; Timing Models                     ; Final                                       ;
++-----------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/21/2021 18:09:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; bcd_counter         ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 121367420160.162160439507260           ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; TBarch                                 ; --            ; --          ; test_bench     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_bench                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; On                                     ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; test_bench.vhd                         ; --            ; --          ; test_bench     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; test_bench                             ; --            ; --          ; test_bench     ;
+; EDA_TEST_BENCH_NAME                  ; test_bench                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; test_bench     ;
+; EDA_TIME_SCALE                       ; 100 us                                 ; --            ; --          ; eda_simulation ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4856 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:00:31     ; 1.0                     ; 5566 MB             ; 00:00:23                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4798 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4870 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:57     ; --                      ; --                  ; 00:00:57                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; SEPEHRREZAED446  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; SEPEHRREZAED446  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; SEPEHRREZAED446  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; SEPEHRREZAED446  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; SEPEHRREZAED446  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off bcd_counter -c bcd_counter
+quartus_fit --read_settings_files=off --write_settings_files=off bcd_counter -c bcd_counter
+quartus_asm --read_settings_files=off --write_settings_files=off bcd_counter -c bcd_counter
+quartus_sta bcd_counter -c bcd_counter
+quartus_eda --read_settings_files=off --write_settings_files=off bcd_counter -c bcd_counter
+
+
+
