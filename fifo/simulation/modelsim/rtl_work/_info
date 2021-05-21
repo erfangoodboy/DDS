@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/simulation/modelsim
+Efifo
+Z1 w1621586586
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo.vhdl
+Z7 FE:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo.vhdl
+l0
+L8
+VK6]<6J`kC]BfQ48bjD[Wn3
+!s100 XghJZCVX4OGob<Lk9TlFP0
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1621586643
+!i10b 1
+Z10 !s108 1621586643.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo.vhdl|
+Z12 !s107 E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo.vhdl|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 4 fifo 0 22 K6]<6J`kC]BfQ48bjD[Wn3
+l55
+L34
+VDe9TQh;[N0SJW?45dj[e?2
+!s100 9[62aNT]NF51TQ[Ho:=OQ0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Etestbench
+Z15 w1621586632
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z17 8E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo_testBench.vhdl
+Z18 FE:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo_testBench.vhdl
+l0
+L5
+V7DP;:5YPHBdconzKHM_?f3
+!s100 MTAB^bMb96MmMIUN@[1PY3
+R8
+31
+Z19 !s110 1621586644
+!i10b 1
+Z20 !s108 1621586644.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo_testBench.vhdl|
+Z22 !s107 E:/programFile/intelFPGA_lite/16.1/quartus/bin64/Altera_SRC/fifo/fifo_testBench.vhdl|
+!i113 1
+R13
+R14
+Abehavior
+R16
+R4
+R5
+DEx4 work 9 testbench 0 22 7DP;:5YPHBdconzKHM_?f3
+l51
+L8
+V7R`^cRS?YCzZ:4X`9GK6O0
+!s100 KFCSGO3?Sn^RkjX0W=J4I0
+R8
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
